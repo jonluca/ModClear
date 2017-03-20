@@ -8,7 +8,7 @@ function clearNotifs() {
 }
 
 var topBar = $(".ThreadPreviewViewerHeader");
-topBar.append("<img id=\"clearAllInjected\" class=\"ThreadPreviewViewerHeader__icon\" src=" + chrome.extension.getURL('images/insert.png') + ">");
+topBar.append("<img id=\"clearAllInjected\" class=\"ThreadPreviewViewerHeader__icon\" src=" + chrome.extension.getURL('images/icon.png') + ">");
 
 $("#clearAllInjected").on('click', clearNotifs);
 document.getElementById("clearAllInjected").style.cursor = "pointer";
