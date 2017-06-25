@@ -20,12 +20,14 @@ function clearNotifs() {
     } else if (currentUrl.indexOf("new") != 0) {
         notifBar = $(".m-new");
     }
-    var count = notifBar.getElementsByClassName("SidebarNav__count");
-    if (count.length == 1) {
-        notifBar.click();
-        setTimeout(function() {
-            clearNotifs();
-        }, 2000);
+    if (notifBar != undefined) {
+        var count = notifBar.getElementsByClassName("SidebarNav__count");
+        if (count.length == 1) {
+            notifBar.click();
+            setTimeout(function() {
+                clearNotifs();
+            }, 2000);
+        }
     }
 }
 
