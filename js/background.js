@@ -6,3 +6,8 @@
     }
     console.log('running');
 });
+
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+    insertIcon();
+    console.log('runsning');
+});
